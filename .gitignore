@@ -1,0 +1,76 @@
+# ================================
+# DJANGO (Backend) - SPÉCIFIQUE AU DOSSIER
+# ================================
+
+# Backend - Fichiers de base de données
+backend/*.sqlite3
+backend/*.db
+backend/db.sqlite3
+
+# Backend - Environnement virtuel
+backend/venv/
+backend/env/
+backend/.venv/
+
+# Backend - Fichiers Python cache
+backend/__pycache__/
+backend/**/__pycache__/
+backend/*.pyc
+backend/**/*.pyc
+
+# Backend - Migrations (sauf __init__.py)
+backend/*/migrations/*.py
+!backend/*/migrations/__init__.py
+
+# Backend - Fichiers Django
+backend/.env
+backend/.env.*
+backend/*.log
+backend/logs/
+backend/media/
+
+# ================================
+# REACT (Frontend) - SPÉCIFIQUE AU DOSSIER
+# ================================
+
+# Frontend - Dependencies
+frontend/node_modules/
+frontend/.pnpm-store/
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+
+# Frontend - Builds
+frontend/build/
+frontend/dist/
+frontend/.next/
+frontend/out/
+
+# Frontend - Environment
+frontend/.env*
+frontend/.env.local
+frontend/.env.development.local
+
+# Frontend - Cache et logs
+frontend/.cache/
+frontend/.parcel-cache/
+frontend/coverage/
+frontend/.nyc_output
+
+# ================================
+# GÉNÉRAL / ROOT
+# ================================
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Éditeurs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Fichiers temporaires
+*.tmp
+*.temp
